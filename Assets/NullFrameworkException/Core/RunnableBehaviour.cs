@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace NullFrameworkException
+namespace NullFrameworkException.Core
 {
     public abstract class RunnableBehaviour : MonoBehaviour, IRunnable
 

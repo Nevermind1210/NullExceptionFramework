@@ -1,9 +1,7 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace NullFrameworkException
+namespace NullFrameworkException.Core
 {
     // The '<ExampleSingleton>' is updating the 'TSingletonType' to be ExampleSingleton
     // public class ExampleSingleton : MonoSingleton<ExampleSingleton>

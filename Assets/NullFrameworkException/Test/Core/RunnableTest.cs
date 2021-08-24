@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using NullFrameworkException.Core;
+using UnityEngine;
 
 namespace NullFrameworkException.Test.Core
 {

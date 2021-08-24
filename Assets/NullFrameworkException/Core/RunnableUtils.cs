@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace NullFrameworkException
+namespace NullFrameworkException.Core
 {
     public class RunnableUtils 
     {
@@ -9,8 +9,9 @@ namespace NullFrameworkException
         ///  Attempts to retrieve the runnable behaviour from the passed gameObject or it's children
         /// </summary>
         /// <param name="_runnable">The reference the runnable will be set to.</param>
+        /// <param name="_optional"></param>
         /// <param name="_from">The gameObject we are attempting to get a runnable from.</param>
-        public static bool Validate<TRunnable>(ref TRunnable _runnable, GameObject _from)
+        public static bool Validate<TRunnable>(ref TRunnable _runnable, GameObject _from, bool _optional)
             where TRunnable : IRunnable
         {
             // If the passed Runnable is already set, return true
@@ -55,11 +56,11 @@ namespace NullFrameworkException
         /// <param name="_params">Any additional information the Runnable setup functions needs.</param>
         /// <typeparam name="TRunnable"></typeparam>
         /// <returns></returns>
-        public static bool Setup<TRunnable>(ref TRunnable _runnable, GameObject _from, params object[] _params)
+        public static bool Setup<TRunnable>(ref TRunnable _runnable, GameObject _from, bool _optional, params object[] _params)
             where TRunnable : IRunnable
         {
             //Validate the component, if we can, set it up and return true
-            if (Validate(ref _runnable, _from))
+            if (Validate(ref _runnable, _from, _optional))
             {
                 _runnable.SetUp(_params);
                 return true;
@@ -75,11 +76,11 @@ namespace NullFrameworkException
         /// <param name="_from">The gameObject the runnable is attached to.</param>
         /// <param name="_params">Any additional information the Runnable is attached to.</param>
         /// <typeparam name="TRunnable"></typeparam>
-        public static void Run<TRunnable>(ref TRunnable _runnable, GameObject _from, params object[] _params)
+        public static void Run<TRunnable>(ref TRunnable _runnable, GameObject _from, bool _optional, params object[] _params)
             where TRunnable : IRunnable
         {
             //Validate the component in case we didn't do it earlier
-            if (Validate(ref _runnable, _from))
+            if (Validate(ref _runnable, _from, _optional))
             {
                 _runnable.Run(_params);
             }
