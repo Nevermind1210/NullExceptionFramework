@@ -1,7 +1,8 @@
 ﻿using System;
+using NullFrameworkException.Core;
 using UnityEngine;
 
-namespace NullFrameworkException.Core
+namespace NullFrameworkException.Mobile.Input
 {
     public class RunnableUtils 
     {

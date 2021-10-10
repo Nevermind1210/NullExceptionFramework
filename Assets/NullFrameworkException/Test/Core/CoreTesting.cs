@@ -1,5 +1,6 @@
 ﻿using System;
 using NullFrameworkException.Core;
+using NullFrameworkException.Mobile.Input;
 using UnityEngine;
 
 namespace NullFrameworkException.Test.Core
