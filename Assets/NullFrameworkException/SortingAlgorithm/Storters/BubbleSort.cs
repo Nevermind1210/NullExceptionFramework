@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,11 +26,13 @@ namespace Sorting
                 
                         // Visualise the swapping of the nodes
                         StartFrame(nodes[i].Index, nodes[i + 1].Index);
-                        yield return null;//new WaitForSecondsRealtime(0.05f);
+                        yield return null; //new WaitForSecondsRealtime(0.05f);
                         EndFrame(nodes[i].Index, nodes[i + 1].Index);
                     }
                 }
             }
         }
     }
+    
+    public class Nodes : ICom
 }
