@@ -33,6 +33,4 @@ namespace Sorting
             }
         }
     }
-    
-    public class Nodes : ICom
 }

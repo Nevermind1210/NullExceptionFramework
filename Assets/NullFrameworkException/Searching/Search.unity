@@ -594,6 +594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1487497808}
   - component: {fileID: 1487497807}
+  - component: {fileID: 1487497809}
   m_Layer: 0
   m_Name: Algorithm
   m_TagString: Untagged
@@ -608,13 +609,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487497806}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf160ca69ccea944fa2b4dc3dcb52a5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   list: 06000000050000000300000001000000090000000600000008000000020000000400000000000000
-  valueToBeFound: 1
+  valueToBeFound: 6
 --- !u!4 &1487497808
 Transform:
   m_ObjectHideFlags: 0
@@ -629,3 +630,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1487497809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487497806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380c3d9f2a024929913859a272d08088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  array: 060000000200000008000000
