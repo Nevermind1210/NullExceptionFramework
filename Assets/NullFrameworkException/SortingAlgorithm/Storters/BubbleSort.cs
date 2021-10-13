@@ -9,9 +9,9 @@ namespace Sorting
     {
         protected override IEnumerator Sort()
         {
-            Node tempNode = null;
+            Node tempNode = null; // we null it
 
-            // Loop through the array every time and as many elements as provided
+            // Loop through the array every time and as many numbers it exists in the array
             for (int j = 0; j < nodes.Length - 1; j++)
             {
                 for (int i = 0; i < nodes.Length - 1; i++)
