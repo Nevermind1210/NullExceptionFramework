@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/NullFrameworkException/MainMenu.unity
+    guid: b9ff9edcc4d74df4ca77bd89a9dafd1a
+  - enabled: 1
+    path: Assets/NullFrameworkException/SortingAlgorithm/Sorting Example.unity
+    guid: 98863855cf9cb7546ad9853957241a69
+  - enabled: 1
+    path: Assets/NullFrameworkException/Searching/Search.unity
+    guid: 46572a9201f61054f8df05b9b995f5a6
   m_configObjects: {}

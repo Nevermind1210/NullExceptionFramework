@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -9,20 +10,20 @@ namespace Sorting
     public class BubbleComparable : MonoBehaviour
     {
         [SerializeField] private int[] array;
-
+        [SerializeField] private TextMeshProUGUI results;
         private void Awake()
         {
-            string logOutput = ""; // We initialize the string
+            string output = ""; // We initialize the string
             BubbleSorter(array); // We sort the array
             foreach (var arr in array) // We find each sorted value in the array
             {
-                logOutput += $"{arr.ToString()} ,"; // We string it!
+                output += $"{arr.ToString()}" + ", "; // We string it!
             }
-            Debug.Log(logOutput); // We display it inside the unity console!
+            Debug.Log(output); // We display it inside the unity console!
         }
 
         /// <summary>
-        /// 
+        /// The algorithm that will sort and compare each number, though bubble sort just does that already
         /// </summary>
         /// <param name="input">Whatever value is that the user has inputted</param>
         /// <typeparam name="T"> T is the generic template for the comparer function </typeparam>
