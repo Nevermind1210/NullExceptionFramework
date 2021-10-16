@@ -1,16 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        GenerateColour();
+        GenerateColor();
     }
 
-    public void GenerateColour()
+    public void GenerateColor()
     {
         GetComponent<Renderer>().sharedMaterial.color = Random.ColorHSV();
     }
@@ -19,5 +16,4 @@ public class Cube : MonoBehaviour
     {
         GetComponent<Renderer>().sharedMaterial.color = Color.white;
     }
-
 }

@@ -7,7 +7,7 @@ using UnityEditor.IMGUI.Controls;
 
 namespace NullFrameworkException.Editor.AI
 {
-    [CustomEditor(typeof(Spawner))]
+    [UnityEditor.CustomEditor(typeof(Spawner))]
     public class SpawnerEditor : UnityEditor.Editor
     {
         // The reference to the component we are drawing the editor for
